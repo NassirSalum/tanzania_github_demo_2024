@@ -13,3 +13,5 @@ dat_pop = WDI::WDI(indicator=c('SP.POP.TOTL'), start=2000, end=2021)
 dat_pop %>%
   filter(country=="Tanzania" & !is.na(SP.POP.TOTL))%>%
   write_csv(here::here("data","pop_tza.csv"))
+
+######
